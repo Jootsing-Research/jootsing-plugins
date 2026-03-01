@@ -14,6 +14,15 @@
       "source": "./plugins/liveactivities",
       "category": "notifications",
       "homepage": "https://liveactivities.ai"
+    },
+    {
+      "name": "tapkit",
+      "description": "Control a physical iPhone from Claude Code via TapKit. See the screen, tap, swipe, type, and navigate apps.",
+      "version": "1.0.0",
+      "author": { "name": "Jootsing Research" },
+      "source": "./plugins/tapkit",
+      "category": "integrations",
+      "homepage": "https://tapkit.ai"
     }
   ]
 }

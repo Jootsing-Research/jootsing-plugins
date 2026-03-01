@@ -1,0 +1,11 @@
+{
+  "name": "tapkit",
+  "version": "1.0.0",
+  "description": "Control a physical iPhone from Claude Code via TapKit. See the screen, tap, swipe, type, and navigate apps.",
+  "author": {
+    "name": "Jootsing Research"
+  },
+  "homepage": "https://tapkit.ai",
+  "repository": "https://github.com/jootsing-research/jootsing-plugins",
+  "keywords": ["ios", "iphone", "automation", "tapkit", "mcp", "phone"]
+}

@@ -7,6 +7,7 @@ Claude Code plugins by [Jootsing Research](https://jootsing.com).
 | Plugin | Description |
 |--------|-------------|
 | [liveactivities](./plugins/liveactivities) | iOS Live Activity notifications for Claude Code |
+| [tapkit](./plugins/tapkit) | Control a physical iPhone from Claude Code via TapKit |
 
 ## Installation
 
