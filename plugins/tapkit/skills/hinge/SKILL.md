@@ -82,6 +82,17 @@ To **pass** on a profile:
 - You can also send GIFs, photos, and voice notes via icons near the input field
 - **To leave a conversation**: swipe right from the left edge of the screen (iOS back gesture) to return to the conversations list
 
+### Messaging Tone
+
+When composing messages, **match the vibe of the person you're talking to.** Read their previous messages and mirror their energy, humor, and style. If they're playful, be playful. If they're chill and lowercase, keep it casual.
+
+Rules:
+- **Never use em dashes** (—). Use commas, periods, or just break into separate messages instead
+- Keep messages short and natural. Nobody sends paragraphs on dating apps
+- Use lowercase if they do. Don't over-capitalize or over-punctuate
+- Don't be overly formal or stiff. Sound like a real person texting
+- Ask questions to keep the conversation going, but don't interrogate
+
 ## Profile Tab
 
 - Shows your own profile as others see it
