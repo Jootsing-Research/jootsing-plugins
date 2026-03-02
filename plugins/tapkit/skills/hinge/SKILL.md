@@ -72,6 +72,7 @@ To **pass** on a profile:
 
 - **Top section**: New matches (profile photos in a horizontal row you can scroll through)
 - **Below**: Active conversations sorted by most recent
+- Conversations are grouped under collapsible sections like **"Your Turn"** and **"Their Turn"**. If you see "Your Turn (3)" but no messages listed below it, the section is collapsed. Tap on it to expand and reveal the conversations. You can tell if a section is collapsed or expanded by the arrow on that row (pointing down = expanded, pointing up = collapsed)
 - Tap a match to open the conversation
 
 ### Messaging
