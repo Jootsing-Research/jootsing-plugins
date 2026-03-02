@@ -9,19 +9,17 @@ Hinge is a dating app focused on meaningful connections. Users browse profiles, 
 
 ## App Structure
 
-### Tab Bar (bottom of screen, ~y:1300)
+### Tab Bar (bottom of screen)
 
-Hinge has 5 tabs along the bottom navigation bar:
+Hinge has 5 tabs along the bottom navigation bar, evenly spaced left to right:
 
-| Tab | Icon | Position (approx x) | Description |
-|-----|------|---------------------|-------------|
-| **Discover** | Hinge logo "H" | ~62 | Main feed — browse and like/pass profiles |
-| **Standouts** | Star | ~186 | Premium profiles that stand out (requires roses) |
-| **Likes You** | Heart | ~310 | People who liked you (blurred without premium) |
-| **Matches** | Chat bubble | ~434 | Your matches and conversations |
-| **Profile** | Person icon | ~558 | Your own profile, settings, preferences |
+1. **Discover** (Hinge logo "H") — Main feed — browse and like/pass profiles
+2. **Standouts** (Star) — Premium profiles that stand out (requires roses)
+3. **Likes You** (Heart) — People who liked you (blurred without premium)
+4. **Matches** (Chat bubble) — Your matches and conversations
+5. **Profile** (Person icon) — Your own profile, settings, preferences
 
-Tap the icon at `(x, 1300)` to switch tabs.
+Take a screenshot and tap the appropriate icon along the bottom edge to switch tabs.
 
 ## Discover Feed (Main Screen)
 
@@ -31,15 +29,15 @@ The Discover feed shows one profile at a time as a scrollable card. Each profile
 
 - **Profile cards scroll vertically** — swipe/flick up to see more of the current profile
 - Each card has a mix of **photos** and **prompt responses** (text cards with a prompt header in small text and the answer in large text)
-- The **person's name** appears at the top center of the screen (~y:95)
-- A **"..." menu** button is in the top-right (~x:570, y:95) for reporting/removing
+- The **person's name** appears at the top center of the screen
+- A **"..." menu** button is in the top-right corner for reporting/removing
 
 ### Interacting with Profile Content
 
-Each photo and prompt has a **heart icon** (top-right of the content, ~x:555, y varies) that you can tap to like that specific piece of content. This is more engaging than a generic like.
+Each photo and prompt has a **heart icon** in the top-right corner of that content piece. Tap it to like that specific photo or prompt — this is more engaging than a generic like.
 
 To **add a comment** on a specific photo or prompt:
-1. Tap the **"Add a comment"** text field below the content piece (~y:690)
+1. Tap the **"Add a comment"** text field below the content piece
 2. The keyboard appears — type your comment with `type_text`
 3. Tap **"done"** on the keyboard or look for a send button
 
@@ -47,8 +45,8 @@ To **add a comment** on a specific photo or prompt:
 
 At the bottom of the profile card (above the tab bar), you'll see action buttons:
 
-- **Rose button** (left side, ~x:105, y:790) — purple/rose icon with a number showing your remaining roses. Tap to send a rose (premium like that gets priority)
-- **Send Priority Like** or **Like** button (center-right, ~x:390, y:790) — pink/rose-colored button to like the profile
+- **Rose button** (left side) — purple/rose icon with a number showing your remaining roses. Tap to send a rose (premium like that gets priority)
+- **Send Priority Like** or **Like** button (right side) — pink/rose-colored button to like the profile
 
 To **pass** on a profile:
 - Tap the **X button** if visible, OR
@@ -77,7 +75,7 @@ To **pass** on a profile:
 ### Messaging
 
 - Messages appear in a chat bubble layout (yours on right, theirs on left)
-- **Text input** is at the bottom of the screen (~y:1270)
+- **Text input** is at the bottom of the screen
 - Tap the input field, type with `type_text`, then tap the **send button** (arrow icon, right side of input)
 - You can also send GIFs, photos, and voice notes via icons near the input field
 
@@ -112,7 +110,7 @@ To **pass** on a profile:
 
 ### Check and Respond to Matches
 ```
-1. Tap Matches tab (~x:434, y:1300)
+1. Tap the Matches tab (4th icon from left in the bottom tab bar)
 2. screenshot → see matches and conversations
 3. Tap on a conversation to open it
 4. Tap the message input field at the bottom
