@@ -21,6 +21,8 @@ Hinge has 5 tabs along the bottom navigation bar, evenly spaced left to right:
 
 Take a screenshot and tap the appropriate icon along the bottom edge to switch tabs.
 
+**The tab bar is not always visible.** When you've scrolled down into a profile, a conversation, or any detail view, the tab bar hides to give more screen space. If you need to switch tabs and don't see the tab bar, scroll back up to the top of the current view — the tab bar will reappear at the bottom. Alternatively, you can tap the back arrow (top-left) to return to the parent screen where the tab bar is visible.
+
 ## Discover Feed (Main Screen)
 
 The Discover feed shows one profile at a time as a scrollable card. Each profile contains multiple sections stacked vertically — photos, prompts, and basic info.
