@@ -1,3 +1,8 @@
+---
+name: tapkit
+description: This skill should be used when the user wants to "control my iPhone", "take a screenshot of my phone", "tap on the screen", "open an app", "type on my phone", or interact with a physical iPhone through TapKit MCP tools.
+---
+
 # TapKit — iPhone Control
 
 You have access to a physical iPhone through TapKit MCP tools. You can see the screen via screenshots and interact through taps, swipes, typing, and other gestures.

@@ -1,0 +1,133 @@
+---
+name: hinge
+description: This skill should be used when the user wants to use Hinge, swipe on dating profiles, like or pass on someone, send a rose, message matches, browse Hinge Discover feed, or interact with the Hinge dating app on their iPhone.
+---
+
+# Hinge — Dating App
+
+Hinge is a dating app focused on meaningful connections. Users browse profiles, like or pass, add comments to specific photos/prompts, and message matches. This skill teaches you Hinge's UI layout and interaction patterns.
+
+## App Structure
+
+### Tab Bar (bottom of screen, ~y:1300)
+
+Hinge has 5 tabs along the bottom navigation bar:
+
+| Tab | Icon | Position (approx x) | Description |
+|-----|------|---------------------|-------------|
+| **Discover** | Hinge logo "H" | ~62 | Main feed — browse and like/pass profiles |
+| **Standouts** | Star | ~186 | Premium profiles that stand out (requires roses) |
+| **Likes You** | Heart | ~310 | People who liked you (blurred without premium) |
+| **Matches** | Chat bubble | ~434 | Your matches and conversations |
+| **Profile** | Person icon | ~558 | Your own profile, settings, preferences |
+
+Tap the icon at `(x, 1300)` to switch tabs.
+
+## Discover Feed (Main Screen)
+
+The Discover feed shows one profile at a time as a scrollable card. Each profile contains multiple sections stacked vertically — photos, prompts, and basic info.
+
+### Profile Card Layout
+
+- **Profile cards scroll vertically** — swipe/flick up to see more of the current profile
+- Each card has a mix of **photos** and **prompt responses** (text cards with a prompt header in small text and the answer in large text)
+- The **person's name** appears at the top center of the screen (~y:95)
+- A **"..." menu** button is in the top-right (~x:570, y:95) for reporting/removing
+
+### Interacting with Profile Content
+
+Each photo and prompt has a **heart icon** (top-right of the content, ~x:555, y varies) that you can tap to like that specific piece of content. This is more engaging than a generic like.
+
+To **add a comment** on a specific photo or prompt:
+1. Tap the **"Add a comment"** text field below the content piece (~y:690)
+2. The keyboard appears — type your comment with `type_text`
+3. Tap **"done"** on the keyboard or look for a send button
+
+### Like / Pass Actions
+
+At the bottom of the profile card (above the tab bar), you'll see action buttons:
+
+- **Rose button** (left side, ~x:105, y:790) — purple/rose icon with a number showing your remaining roses. Tap to send a rose (premium like that gets priority)
+- **Send Priority Like** or **Like** button (center-right, ~x:390, y:790) — pink/rose-colored button to like the profile
+
+To **pass** on a profile:
+- Tap the **X button** if visible, OR
+- Simply scroll past all their content and the next profile loads automatically
+- There is no prominent "pass" button on the content view — passing happens by scrolling through without liking
+
+### Scrolling Through a Profile
+
+- **Swipe up** to see more of the current person's profile (more photos, prompts)
+- Keep scrolling past all their content to load the next profile
+- Profile sections alternate between photos and prompt responses
+
+## Likes You Tab
+
+- Shows profiles of people who have liked you
+- **Without premium**: photos are blurred, you can see the number of likes
+- **With premium**: you can see all profiles and choose to match or pass
+- Each profile shows a preview — tap to see the full profile
+
+## Matches & Messages Tab
+
+- **Top section**: New matches (profile photos in a horizontal row you can scroll through)
+- **Below**: Active conversations sorted by most recent
+- Tap a match to open the conversation
+
+### Messaging
+
+- Messages appear in a chat bubble layout (yours on right, theirs on left)
+- **Text input** is at the bottom of the screen (~y:1270)
+- Tap the input field, type with `type_text`, then tap the **send button** (arrow icon, right side of input)
+- You can also send GIFs, photos, and voice notes via icons near the input field
+
+## Profile Tab
+
+- Shows your own profile as others see it
+- **Edit** button or tap on sections to modify photos, prompts, basic info
+- **Settings** gear icon (top corner) for preferences, filters, account settings
+- **Preferences** section lets you set age range, distance, dealbreakers
+
+## Key Workflows
+
+### Browse and Like Profiles
+```
+1. screenshot → verify you're on Discover tab
+2. Scroll through the profile to see photos and prompts
+3. To like a specific photo/prompt: tap the heart icon on that content
+4. To add a comment: tap "Add a comment" field → type_text → send
+5. To send a rose: tap the rose button (left side)
+6. To pass: keep scrolling past all content, next profile loads
+7. screenshot → verify next profile loaded
+```
+
+### Send a Thoughtful Like (with comment)
+```
+1. Scroll through profile to find a photo or prompt you want to comment on
+2. Tap "Add a comment" below that content
+3. type_text("your witty comment here")
+4. Tap send/done
+5. screenshot to verify the like was sent
+```
+
+### Check and Respond to Matches
+```
+1. Tap Matches tab (~x:434, y:1300)
+2. screenshot → see matches and conversations
+3. Tap on a conversation to open it
+4. Tap the message input field at the bottom
+5. type_text("your message")
+6. Tap send button
+7. screenshot to verify
+```
+
+## Tips and Gotchas
+
+- **Loading time**: After liking/passing, the next profile takes 1-2 seconds to load. Take a screenshot after a brief pause if the screen looks transitional
+- **"We've run out of people"**: If you see this screen, the user has gone through all available profiles. Suggest adjusting distance/age preferences or waiting
+- **Premium prompts**: Hinge frequently shows upgrade prompts (Hinge+, HingeX). These appear as full-screen overlays — look for an "X" or "No thanks" to dismiss them
+- **Rose limit**: Free users get 1 rose per week. The rose button shows the count. Don't send roses without the user's explicit approval
+- **Comment before liking**: Adding a comment to a specific photo/prompt is Hinge's signature feature and leads to better matches. Suggest this to users when appropriate
+- **Profile order matters**: The first photo and first prompt are what most people see. When editing profiles, prioritize these
+- **Daily limits**: Free users have a limited number of likes per day. If likes run out, Hinge will show a "Come back tomorrow" message
+- **Keyboard dismissal**: After typing a comment, if the keyboard blocks action buttons, tap outside the text field or press home and reopen the conversation
